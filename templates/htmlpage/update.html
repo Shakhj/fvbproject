@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	{%block for_child%}
+	<h1 style="color:blue;">updation form</h1>
+	<form method="POST">
+		Number:<input type="text" name="sno"
+		value="{{stud.sno}}"><br><br>
+		Name:<input type="text" name="sno"
+		value="{{stud.sname}}"><br><br>
+		Marks:<input type="text" name="sno"
+		value="{{stud.smarks}}"><br><br>
+		Address:<input type="text" name="sno"
+		value="{{stud.saddr}}"><br><br>
+		{%csrf_token%}
+		<input type="submit" value="submit">
+	</form>
+	{%endblock%}
+
+</body>
+</html>
